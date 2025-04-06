@@ -1,0 +1,145 @@
+.navbar-nav .nav-link{
+    margin-right: 40px;
+}
+
+.navbar{
+    background-color: rgb(252, 107, 204) !important;
+    padding: 2px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+ .navbar a:hover{
+  background-color: rgb(260, 122, 217);
+  border-radius: 10px;
+ }
+
+.gradient-background{
+    background-image: linear-gradient(90deg,rgb(76, 200, 246) ,rgb(235, 219, 227) ,rgb(221, 16, 146));
+    animation: grad 5s linear infinite;
+    background-size: 150% 150%;
+    z-index: 1;
+    width: 100%;
+}
+
+@keyframes grad{
+    0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+
+}
+
+.image-column {
+  height: auto; /* Let the image control the height */
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title-column {
+  height: 100px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+.languages {
+  
+  padding: 10px;
+}
+.language-item {
+  
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+ 
+}
+.responsive-image {
+  max-width: 100%;
+  max-height: 80%;
+  height: auto;
+  width: auto;
+}
+@media (min-width: 156px) {
+  .title-column {
+      font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .title-column {
+      font-size: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .title-column {
+      font-size: 3.5rem;
+      padding-top: 120px;
+      padding-bottom: 90px;
+  }
+}
+
+.container1{
+  background-color: rgb(175, 218, 255);
+}
+
+p{
+  font-weight: 700;
+}
+
+@keyframes rotate-back-to-front {
+  0% {
+      transform: rotateY(0deg);
+  }
+  50% {
+      transform: rotateY(180deg); 
+  }
+  100% {
+      transform: rotateY(0deg); 
+  }
+}
+
+.rotating {
+  animation: rotate-back-to-front 6s ease-in-out infinite;
+}
+
+.language-item {
+  opacity: 0;
+  transform: translateX(100px); 
+  transition: opacity 1s ease, transform 1s ease; 
+}
+
+.language-item.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); 
+}
+
+
+form {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg,rgb(136, 212, 253), rgb(255, 255, 255), rgb(136, 212, 253));
+  animation: contact 4s linear infinite;
+  background-size: 150% 150%;
+  z-index: 1;
+}
+
+@keyframes contact {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
